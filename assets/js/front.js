@@ -1,5 +1,6 @@
-$(function () {
+var targetDate = new Date(2017,9,14)
 
+$(function () {
     animations();
     fullScreenContainer();
     sliders();
@@ -13,7 +14,6 @@ $(window).load(function () {
 
 });
 $(window).resize(function () {
-
     newWindowWidth = $(window).width();
 
     if (windowWidth !== newWindowWidth) {
@@ -24,7 +24,6 @@ $(window).resize(function () {
         }, 205);
         windowWidth = newWindowWidth;
     }
-
 });
 
 
@@ -51,9 +50,7 @@ function sliders() {
  *  =======================================*/
 
 function animations() {
-
     if (Modernizr.csstransitions) {
-
         delayTime = 0;
         $('[data-animate]').css({opacity: '0'});
         $('[data-animate]').waypoint(function (direction) {
@@ -110,11 +107,9 @@ function fullScreenContainer() {
     var screenHeight = '';
     if ($(window).width() > 1000) {
         screenHeight = $(window).height() + "px";
-    }
-    else {
+    } else {
         screenHeight = "auto";
     }
-
 
     $("#intro, #intro .item").css({
         width: screenWidth,
@@ -209,3 +204,14 @@ function contactForm() {
         return false; // avoid to execute the actual submit of the form.
     });
 }
+
+/* =========================================
+ *  COUNTDOWN
+ *  =======================================*/
+$('#countdown').countdown(targetDate, function(event) {
+  var $this = $(this).html(event.strftime(''
+    + '<div class="col-xs-3 col-md-2 col-md-offset-2"><h2 class="text-center"><strong>%D</strong></h2><p>dias</p></div>'
+    + '<div class="col-xs-3 col-md-2"><h2 class="text-center"><strong>%H</strong></h2><p>horas</p></div>'
+    + '<div class="col-xs-3 col-md-2"><h2 class="text-center"><strong>%M</strong></h2><p>min</p></div>'
+    + '<div class="col-xs-3 col-md-2"><h2 class="text-center"><strong>%S</strong></h2><p>seg</p></div>'));
+});
