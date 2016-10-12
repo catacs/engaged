@@ -1,0 +1,28 @@
+/* Master Styles */
+/*h1 {
+  color: #000;
+  font-size: 84px;
+  font-family: 'Pacifico', cursive;
+}
+h2, h3 {
+  color: #000;
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+}*/
+
+.styled {
+    margin-bottom: 23px;
+}
+.countdown {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.main-title {
+  font-family: 'Pacifico', cursive;
+}
+
+.second-title {
+  font-family: 'Pacifico', cursive;
+  font-weight: lighter;
+}
