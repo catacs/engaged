@@ -220,7 +220,6 @@ $('#countdown').countdown(targetDate, function(event) {
  *  MAP
  *  =======================================*/
 function initMap() {
-    39.4884388,-0.3254504,15
     var myLatLng = {lat: 39.4884388, lng: -0.3254504};
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 15,
@@ -232,4 +231,10 @@ function initMap() {
         map: map,
         title: 'La Ferradura'
     });
+
+    marker.addListener('click', function() {
+        map.setZoom(15);
+        map.setCenter(marker.getPosition());
+    });
+
 }
