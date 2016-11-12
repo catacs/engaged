@@ -30,7 +30,12 @@ h2, h3 {
 .second-title {
   font-family: 'Pacifico', cursive;
   font-weight: lighter;
-}#map-container{
+}
+
+.image-container {
+  border-radius: 50%;
+}
+#map-container{
     height: 400px;
     width: 700px;
 }
