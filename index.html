@@ -86,9 +86,11 @@
                         <li class="active"><a href="#intro">Intro</a>
                         <li><a href="#section1">Sobre nosotros</a>
                         </li>
-                        <li><a href="#section2">Testimonials</a>
+                        <li><a href="#section2">Lugar</a>
                         </li>
-                        <li><a href="#section3">Contact</a>
+                        <li><a href="#section3">Testimonials</a>
+                        </li>
+                        <li><a href="#section4">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -107,6 +109,7 @@
             <!-- *** INTRO IMAGE ***
         _________________________________________________________ -->
             <div id="intro" class="clearfix">
+            <div id="intro" >
                     <div class="item">
                             <div class="container">
                                     <div class="row">
@@ -151,10 +154,33 @@
 
             <!-- *** ABOUT US END *** -->
 
+            <!-- *** PLACE START *** -->
+
+            <div class="section" id="section2" >
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb20">
+                                <h2 class="title" data-animate="fadeInUp">Lugar</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="map-container" class="col-md-8 col-md-offset-2 pull-right">
+                            <div id="map"></div>
+                        </div>
+                    </div>
+                    <!-- /.12 -->
+                </div>
+                <!-- /.container -->
+            </div>
+            <!-- /.section -->
+            <!-- *** PLACE END *** -->
+
             <!-- *** TESTIMONIALS ***
 _________________________________________________________ -->
 
-            <div class="section" id="section2" data-animate="fadeInUp">
+            <div class="section text-gray" id="section3" data-animate="fadeInUp">
 
                 <div class="container">
                     <div class="col-md-12">
@@ -251,7 +277,7 @@ _________________________________________________________ -->
             <!-- *** CONTACT ***
         _________________________________________________________ -->
 
-            <div class="section text-gray" id="section3" >
+            <div class="section" id="section4" >
                 <div class="container">
                     <div class="col-md-8 col-md-offset-2">
 
@@ -322,6 +348,9 @@ _________________________________________________________ -->
 
         <!-- countdown -->
         <script src="assets/js/jquery.countdown.min.js"></script>
+        
+        <!-- gmaps -->
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRA3m-W8QdwURBQi-OGOtrYQDwO3m8mrk&callback=initMap"></script>
 
         <!-- main js file -->
 
