@@ -86,9 +86,11 @@
                         <li class="active"><a href="#intro">Intro</a>
                         <li><a href="#section1">Sobre nosotros</a>
                         </li>
-                        <li><a href="#section2">Testimonials</a>
+                        <li><a href="#section2">Lugar</a>
                         </li>
-                        <li><a href="#section3">Contact</a>
+                        <li><a href="#section3">Testimonials</a>
+                        </li>
+                        <li><a href="#section4">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -106,13 +108,15 @@
 
             <!-- *** INTRO IMAGE ***
         _________________________________________________________ -->
-            <div id="intro" class="clearfix">
+            <div id="intro" >
                     <div class="item">
                             <div class="container">
                                     <div class="row">
-                                        <h2 class="second-title" data-animate="fadeInDown">Nos Casamos</h2>
-                                        <h1 class="main-title" data-animate="fadeInDown">Catalin & Amparo</h1>
-                                        <p  class="message" data-animate="fadeInUp">El 14 de Octubre de 2017</p>
+                                        <div class="col-xs-12">
+                                            <h2 class="second-title" data-animate="fadeInDown">Nos Casamos</h2>
+                                            <h1 class="main-title" data-animate="fadeInDown">Catalin & Amparo</h1>
+                                            <p  class="message" data-animate="fadeInUp">El 14 de Octubre de 2017</p>
+                                        </div>
                                     </div>
                                     <div class="row" id="countdown" data-animate="fadeInDown">
                                     </div>
@@ -127,22 +131,36 @@
 
             <div class="section  text-gray" id="section1">
                 <div class="container">
-                    <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="title" data-animate="fadeInDown">Sobre nosotros</h2>
 
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <img class="img-circle img-responsive" src="/assets/img/image-1.jpg" alt="El Novio"><img>
+                                </div>
+                                <div class="col-xs-6">
+                                    <h3  data-animate="fadeInUp"> El novio </h3>
+                                    <p class="text-large text-thin margin-bottom"  data-animate="fadeInUp">A very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box. Quick brown dogs jump over the lazy fox. The jay, pig, fox, zebra, and my wolves quack! Blowzy red vixens fight for a quick jump. Joaquin Phoenix was gazed by MTV for luck. A wizard’s job is to vex chumps quickly in fog. Watch "Jeopardy!", Alex Trebek's fun TV quiz game. Woven silk pyjamas exchanged for blue quartz.</p>
+                                </div>
 
-                        <h2 class="title" data-animate="fadeInDown">Sobre nosotros</h2>
-
-                        <div class="row">
-
-                            <div class="col-md-8 col-md-offset-2">
-
-                                <p class="text-large text-thin"  data-animate="fadeInUp">Five quacking zephyrs jolt my wax bed. Flummoxed by job, kvetching W. zaps Iraq. Cozy sphinx waves quart jug of bad milk. </p>
-                                <p class="text-large text-thin margin-bottom"  data-animate="fadeInUp">A very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box. Quick brown dogs jump over the lazy fox. The jay, pig, fox, zebra, and my wolves quack! Blowzy red vixens fight for a quick jump. Joaquin Phoenix was gazed by MTV for luck. A wizard’s job is to vex chumps quickly in fog. Watch "Jeopardy!", Alex Trebek's fun TV quiz game. Woven silk pyjamas exchanged for blue quartz.</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-10-offset"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <h3  data-animate="fadeInUp"> La novia </h3>
+                                    <p class="text-large text-thin margin-bottom"  data-animate="fadeInUp">A very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box. Quick brown dogs jump over the lazy fox. The jay, pig, fox, zebra, and my wolves quack! Blowzy red vixens fight for a quick jump. Joaquin Phoenix was gazed by MTV for luck. A wizard’s job is to vex chumps quickly in fog. Watch "Jeopardy!", Alex Trebek's fun TV quiz game. Woven silk pyjamas exchanged for blue quartz.</p>
+                                </div>
+                                <div class="col-xs-4 pull-right">
+                                    <img class="img-circle img-responsive" src="/assets/img/image-2.jpg" alt="La Novia"><img>
+                                </div>
                             </div>
 
                         </div>
-
                     </div>
+                    
                     <!-- /.12 -->
                 </div>
                 <!-- /.container -->
@@ -151,10 +169,33 @@
 
             <!-- *** ABOUT US END *** -->
 
+            <!-- *** PLACE START *** -->
+
+            <div class="section" id="section2" >
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb20">
+                                <h2 class="title" data-animate="fadeInUp">Lugar</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="map-container" class="col-md-8 col-md-offset-2 pull-right">
+                            <div id="map"></div>
+                        </div>
+                    </div>
+                    <!-- /.12 -->
+                </div>
+                <!-- /.container -->
+            </div>
+            <!-- /.section -->
+            <!-- *** PLACE END *** -->
+
             <!-- *** TESTIMONIALS ***
 _________________________________________________________ -->
 
-            <div class="section" id="section2" data-animate="fadeInUp">
+            <div class="section text-gray" id="section3" data-animate="fadeInUp">
 
                 <div class="container">
                     <div class="col-md-12">
@@ -251,7 +292,7 @@ _________________________________________________________ -->
             <!-- *** CONTACT ***
         _________________________________________________________ -->
 
-            <div class="section text-gray" id="section3" >
+            <div class="section" id="section4" >
                 <div class="container">
                     <div class="col-md-8 col-md-offset-2">
 
@@ -322,6 +363,9 @@ _________________________________________________________ -->
 
         <!-- countdown -->
         <script src="assets/js/jquery.countdown.min.js"></script>
+        
+        <!-- gmaps -->
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRA3m-W8QdwURBQi-OGOtrYQDwO3m8mrk&callback=initMap"></script>
 
         <!-- main js file -->
 

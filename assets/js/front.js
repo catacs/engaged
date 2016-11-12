@@ -1,4 +1,4 @@
-var targetDate = new Date(2017,9,14)
+var targetDate = new Date(2017,9,14, 19, 0);
 
 $(function () {
     animations();
@@ -215,3 +215,21 @@ $('#countdown').countdown(targetDate, function(event) {
     + '<div class="col-xs-3 col-md-2"><h2 class="text-center"><strong>%M</strong></h2><p>min</p></div>'
     + '<div class="col-xs-3 col-md-2"><h2 class="text-center"><strong>%S</strong></h2><p>seg</p></div>'));
 });
+
+/* =========================================
+ *  MAP
+ *  =======================================*/
+function initMap() {
+    39.4884388,-0.3254504,15
+    var myLatLng = {lat: 39.4884388, lng: -0.3254504};
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 15,
+        center: myLatLng
+    });
+
+    var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'La Ferradura'
+    });
+}
