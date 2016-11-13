@@ -1,4 +1,4 @@
-var targetDate = new Date(2017,9,14, 19, 0);
+var targetDate = new Date(2017,9,14, 18, 30);
 
 $(function () {
     animations();
