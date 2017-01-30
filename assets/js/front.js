@@ -1,4 +1,6 @@
-var targetDate = new Date(2017,9,14, 18, 30);
+// Set date in UTC to end counter at the same time in all countries.
+// Spain time is 2017 10 14 19:00:00:00 UTC is + 2, so in utc 2017 10 14 17:00:00:00
+var targetDate = new Date(Date.UTC(2017,9,14, 17, 00, 0, 0));
 
 $(function () {
     animations();
