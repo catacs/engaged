@@ -1,15 +1,4 @@
 /* your styles go here */
-/* Master Styles */
-/*h1 {
-  color: #000;
-  font-size: 84px;
-  font-family: 'Pacifico', cursive;
-}
-h2, h3 {
-  color: #000;
-  font-family: 'Raleway', sans-serif;
-  font-weight: lighter;
-}*/
 
 .styled {
     margin-bottom: 23px;
@@ -59,3 +48,7 @@ h2, h3 {
 .margin-bottom-20 { margin-bottom: 2.0em; }
 .margin-bottom-25 { margin-bottom: 2.5em; }
 .margin-bottom-30 { margin-bottom: 3.0em; }
+
+.success {
+  background-color: #6aae7a;
+}
