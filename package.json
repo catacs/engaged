@@ -1,6 +1,6 @@
 {
   "name": "engaged",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "scripts": {
     "start": "concurrently \"lite-server\"",
     "lite": "lite-server",
